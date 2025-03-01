@@ -4,10 +4,13 @@ package com.rocketseat.service.tasks;
 import com.rocketseat.service.tasks.notification.NotificationClient;
 import com.rocketseat.service.tasks.notification.NotificationRequest;
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+
+@Service
 @AllArgsConstructor
 public class TaskService {
 

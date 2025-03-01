@@ -1,19 +1,17 @@
 package com.rocketseat.service.tasks;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
+
+@Getter
+@Setter
+@Entity(name = "Task")
+@Table(name = "Task")
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-@Entity(name = "Task")
 public class TaskEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
