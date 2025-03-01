@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: service.main
+    name: service-tasks
   cloud:
     config:
       server:
