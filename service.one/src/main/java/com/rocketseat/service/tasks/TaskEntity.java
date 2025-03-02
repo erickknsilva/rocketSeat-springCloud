@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity(name = "Task")
-@Table(name = "Task")
 @NoArgsConstructor
 @AllArgsConstructor
 public class TaskEntity {
@@ -24,5 +23,12 @@ public class TaskEntity {
     private LocalDateTime dueDate;
 
     private boolean notified;
+
+    public TaskEntity(TaskRequest request) {
+        this.title = request.title();
+        this.email = request.email();
+        this.dueDate = request.dueDate();
+        this.notified = request.notified();
+    }
 
 }

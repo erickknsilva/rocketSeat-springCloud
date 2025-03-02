@@ -1,3 +1,6 @@
+server:
+  port: 8081
+
 spring:
   application:
     name: service-tasks
@@ -27,3 +30,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: "http://localhost:8888/eureka"
+  instance:
+    prefer-ip-address: false
+    hostname: localhost

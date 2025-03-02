@@ -18,8 +18,8 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    instance:
-      hostname: localhost
+  instance:
+    hostname: localhost
   server:
     self-preservation: false
     lease-renewal-interval-in-seconds: 30  # Renovação a cada 30 segundos
