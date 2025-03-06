@@ -21,15 +21,15 @@ spring:
       enabled: true
       path: /h2-console
   config:
-    import: "configserver:http://localhost:8888/config"
+    import: "configserver:http://service-main:8888/config"
   cloud:
     config:
-      uri: "http://localhost:8888/config"
+      uri: "http://service-main:8888/config"
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: "http://localhost:8888/eureka"
+      defaultZone: "http://service-main:8888/eureka"
   instance:
     prefer-ip-address: false
-    hostname: localhost
+    hostname: service-tasks
